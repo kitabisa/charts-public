@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# Helm Chart Public
 
-You can use the [editor on GitHub](https://github.com/kitabisa/charts-public/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This repo is intended for Kitabisa public helm chart.
 
-### Markdown
+The code is provided as-is with no warranties.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Usage
 
-```markdown
-Syntax highlighted code block
+[Helm](https://helm.sh) must be installed to use the charts.
+Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 
-# Header 1
-## Header 2
-### Header 3
+Once Helm is set up properly, add the repo as follows:
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```console
+helm repo add kitabisa https://kitabisa.github.io/charts-public
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+You can then run `helm search repo kitabisa` to see the charts.
 
-### Jekyll Themes
+## Contributing
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kitabisa/charts-public/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->
+We'd love to have you contribute! Please refer to our [contribution guidelines](https://github.com/kitabisa/charts-public/blob/main/CONTRIBUTING.md) for details.
 
-### Support or Contact
+## License
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->
+[Apache 2.0 License](https://github.com/kitabisa/charts-public/blob/main/LICENSE).
