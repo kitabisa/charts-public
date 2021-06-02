@@ -1,0 +1,33 @@
+name: Sync Readme to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Copy README.md to temp folder
+        run: |
+          cp -f README.md ${{ runner.temp }}/README.md
+      
+      - name: Checkout to gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+      
+      - name: Push README.md from temp folder to gh-pages branch
+        run: |
+          cp -f ${{ runner.temp }}/README.md .
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git add README.md
+          git commit --signoff -m "Sync README from main"
+          git push
