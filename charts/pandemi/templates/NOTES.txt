@@ -1,0 +1,5 @@
+Pandemi is kubernetes controller for global configmap and secrets.
+When this controller running, it will create global namespaces for itself, and put the global configmap and secrets into
+it.
+Then it will distribute it's configmap and secret values to all other namespace by creating new configmap and secret.
+It will redistribute if any changes occured in configmap and secret in the global namespace.

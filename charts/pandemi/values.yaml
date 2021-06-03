@@ -1,0 +1,30 @@
+replicaCount: 1
+
+image:
+  repository: budiariyanto/pandemi
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+namespace: "global"
+
+serviceAccount:
+  annotations: {}
+  name: "pandemi-service-account"
+
+clusterRole:
+  apiGroups:
+    - ""
+  resources:
+    - "configmaps"
+    - "secrets"
+    - "namespaces"
+  verbs:
+    - "get"
+    - "watch"
+    - "list"
+    - "create"
+    - "update"
+    - "patch"
+
+clusterRoleBinding:
+  clusterRoleName: "pandemi-cluster-role"
