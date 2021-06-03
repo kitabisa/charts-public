@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: budiariyanto/pandemi
-  pullPolicy: IfNotPresent
+  repository: kitabisa/pandemi
+  pullPolicy: Always
   tag: "latest"
 
 namespace: "global"
