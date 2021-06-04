@@ -41,4 +41,4 @@ The command removes all the Kubernetes components associated with the chart and 
 | `namespace`               | Default namespace for pandemi                    | `global`                   |
 | `serviceAccountName`      | Default service account name for pandemi         | `pandemi-service-account`  |
 | `clusterRole.name`        | Default cluster role name for pandemi            | `pandemi-cluster-role`     |
-| `clusterRole.apiGroups`   | Default cluster role api groups for pandemi      | `""`                       |
+| `clusterRole.apiGroups`   | Default cluster role api groups for pandemi      | `[""]`                       |
