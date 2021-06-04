@@ -2,6 +2,7 @@
 Pandemi is kubernetes controller for global configmap and secrets.
 When this controller running, it will create global namespaces for itself, and put the global configmap and secrets into
 it.
+
 Then it will distribute it's configmap and secret values to all other namespace by creating new configmap and secret.
 It will redistribute if any changes occured in configmap and secret in the global namespace.
 
@@ -11,7 +12,7 @@ You can see in more details how Pandemi works [here](https://github.com/kitabisa
 
 ## TL;DR
 ```shell
-$ helm repo add kitabisa https://github.com/kitabisa/charts-public
+$ helm repo add kitabisa https://kitabisa.github.io/charts-public/
 $ helm install my-release kitabisa/pandemi
 ```
 
