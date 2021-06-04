@@ -15,7 +15,7 @@ spec:
       labels:
         app: pandemi
     spec:
-      serviceAccountName: {{ .Values.serviceAccount.name }}
+      serviceAccountName: {{ .Values.serviceAccountName }}
       containers:
         - name: pandemi
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

@@ -6,25 +6,9 @@ image:
   tag: "latest"
 
 namespace: "global"
-
-serviceAccount:
-  annotations: {}
-  name: "pandemi-service-account"
+serviceAccountName: "pandemi-service-account"
 
 clusterRole:
+  name: "pandemi-cluster-role"
   apiGroups:
     - ""
-  resources:
-    - "configmaps"
-    - "secrets"
-    - "namespaces"
-  verbs:
-    - "get"
-    - "watch"
-    - "list"
-    - "create"
-    - "update"
-    - "patch"
-
-clusterRoleBinding:
-  clusterRoleName: "pandemi-cluster-role"
