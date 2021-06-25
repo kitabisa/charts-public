@@ -1,10 +1,8 @@
 # Pandemi chart by Kitabisa
 Pandemi is kubernetes controller for global configmap and secrets.
-When this controller running, it will create global namespaces for itself, and put the global configmap and secrets into
-it.
 
 Then it will distribute it's configmap and secret values to all other namespace by creating new configmap and secret.
-It will redistribute if any changes occured in configmap and secret in the global namespace.
+It will redistribute if any changes occured in configmap and secret in pandemi namespace.
 
 You can see in more details how Pandemi works [here](https://github.com/kitabisa/pandemi/blob/master/README.md).
 
@@ -39,7 +37,6 @@ The command removes all the Kubernetes components associated with the chart and 
 | `image.repository`        | Docker image repository                          | `kitabisa/pandemi`         |
 | `image.pullPolicy`        | Docker image pull policy                         | `Always`                   |
 | `image.tag`               | Docker image tag                                 | `latest`                   |
-| `namespace`               | Default namespace for pandemi                    | `global`                   |
 | `serviceAccountName`      | Default service account name for pandemi         | `pandemi-service-account`  |
 | `clusterRole.name`        | Default cluster role name for pandemi            | `pandemi-cluster-role`     |
-| `clusterRole.apiGroups`   | Default cluster role api groups for pandemi      | `[""]`                       |
+| `clusterRole.apiGroups`   | Default cluster role api groups for pandemi      | `[""]`                     |
