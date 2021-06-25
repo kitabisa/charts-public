@@ -4,6 +4,7 @@ metadata:
   name: pandemi-cluster-role-binding
 subjects:
   - kind: ServiceAccount
+    namespace: {{ .Release.Namespace }}
     name: {{ .Values.serviceAccountName }}
 roleRef:
   kind: ClusterRole
