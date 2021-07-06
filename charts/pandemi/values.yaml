@@ -5,6 +5,7 @@ image:
   pullPolicy: Always
   tag: "latest"
 
+watcherLabels: "pandemi-watch:true"
 serviceAccountName: "pandemi-service-account"
 
 clusterRole:
