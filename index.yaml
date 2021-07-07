@@ -3,6 +3,16 @@ entries:
   pandemi:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2021-07-07T04:28:10.249813364Z"
+    description: Kubernetes controller for injecting global secret and configmap
+    digest: 854a2474045b02132c4ec52517c82c44f4e7e3484cd503c52606f91b79c05daa
+    name: pandemi
+    type: application
+    urls:
+    - https://github.com/kitabisa/charts-public/releases/download/pandemi-0.1.4/pandemi-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2021-06-25T08:25:50.919293475Z"
     description: Kubernetes controller for injecting global secret and configmap
     digest: 53c000bc5dbaa113f2ac2bb42b08754f73ec923026ae9ae6ebc7789c9bc7e661
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/kitabisa/charts-public/releases/download/pandemi-0.1.0/pandemi-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-25T08:25:50.919309876Z"
+generated: "2021-07-07T04:28:10.249843165Z"
