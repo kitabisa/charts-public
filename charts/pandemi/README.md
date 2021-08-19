@@ -26,7 +26,7 @@ The command deploys Pandemi on the Kubernetes cluster in the default configurati
 To uninstall/delete the my-release deployment:
 
 ```shell
-$ helm delete my-release
+$ helm uninstall my-release
 ```
 The command removes all the Kubernetes components associated with the chart and deletes the release.
 
