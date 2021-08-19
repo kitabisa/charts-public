@@ -1,0 +1,6 @@
+apiVersion: v2
+name: magneto
+description: Helm chart for magneto, kubernetes controller to move pods to a particular GKE preemptible node
+type: application
+version: 0.0.1
+appVersion: 0.0.1
