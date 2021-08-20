@@ -1,0 +1,20 @@
+start;
+while(watch new preemtible node) {
+  get standard node list;
+  get list namespaces;
+  
+  while(loop namespaces) {
+    get list of pods;
+    
+    while(loop pods) {
+      filter pod whether it's located in standard node;
+      filter pod by node affinity;
+      filter pod by toleration;
+      collect pod into a selected array;
+    }
+    
+    while(loop selected array) {
+      delete selected pod;
+    }
+  }
+}

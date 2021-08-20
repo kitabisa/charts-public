@@ -1,0 +1,27 @@
+configmap:
+  # define log level: debug/info/warn/error/fatal
+  logLevel: error
+  # wait time after node ready before assigning pod to node. Use golang suffix unit https://pkg.go.dev/time#ParseDuration
+  nodeReadyWaitTime: 10s
+  # delay interval between pod deletion. Use golang suffix unit https://pkg.go.dev/time#ParseDuration
+  podDeletionInterval: 3s
+
+  # defines preemptible node labels
+  preemptibleLabel:
+    id-1: value-id-1
+    id-2: value-id-2
+
+  # defines standard node labels
+  standardLabel:
+    id-1: value-id-1
+    id-2: value-id-2
+
+  # defines preemptible node taints
+  preemtibleTaint:
+    taint-1: value-taint-1:effect
+    taint-2: value-taint-2:effect
+
+image:
+  name: "kitabisa/magneto"
+  tag: "0.0.1"
+  pullPolicy: "IfNotPresent"
